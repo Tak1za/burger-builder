@@ -16,9 +16,17 @@ const orderSummary = props => {
       <h3>Your order</h3>
       <p>A delicious burger with the following ingredients</p>
       <ul>{ingredientSummary}</ul>
+      <p>
+        Amount: ₹<strong>{props.totalPrice}</strong>
+      </p>
       <p>Continue to checkout?</p>
-      <Button btnType="Success" clicked={props.purchaseContinued}>Continue</Button>
-      <Button btnType="Danger" clicked={props.purchaseCanceled}>Cancel</Button>
+
+      <Button btnType="Success" clicked={props.purchaseContinued}>
+        Continue
+      </Button>
+      <Button btnType="Danger" clicked={props.purchaseCanceled}>
+        Cancel
+      </Button>
     </Aux>
   );
 };

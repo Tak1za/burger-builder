@@ -25,7 +25,7 @@ const buildControls = props => (
   <div className={classes.BuildControls}>
     <p>
       <em>
-        Current Price: <strong>{props.price}</strong>
+        Current Price: ₹<strong>{props.price}</strong>
       </em>
     </p>
     {controls.map(ctrl => (
